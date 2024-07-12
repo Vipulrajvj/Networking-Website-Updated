@@ -1,0 +1,54 @@
+/* Creating proper space between each of them and then aligning all of them  in center */
+
+/* Step 9 is how to keep the header stuck to the top , we use position sticky for the same and then put z index value  */
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display : flex;
+    justify-content:space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.1px solid lightgrey;
+    background-color: #508AA8;
+    height: 45px;
+    align-items: center;
+}
+
+.header_left{
+    display: flex;
+}
+
+.header_left > img{
+    height: 42px;
+    /* contains the image when we resize it  */
+    object-fit: contain;
+    padding-right: 10px;
+    
+    
+}
+
+.header_search {
+
+    /* use padding and other properties to change values of the field of the input box */
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #eef3f8;
+    width: 400px;
+    height: 22px;
+}
+
+.header_search > input{
+    
+    border: none;
+    outline: none;
+    background: none;
+    
+}
+
+.header_right{
+    display: flex;
+}

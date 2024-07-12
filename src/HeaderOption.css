@@ -1,0 +1,21 @@
+.HeaderOption{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+.HeaderOption:hover{
+    color:black;
+}
+
+.HeaderOption_icon{
+    /* to put all in the same perspective */
+    /* important to bypass material ui */
+    object-fit: contain;
+    height: 28px !important;
+    width: 28px !important;
+}
